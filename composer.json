@@ -1,0 +1,13 @@
+{
+    "name": "OACASALWEDDING",
+    "description": "Wedding System",
+    "require": {
+        "slim/slim": "2.*",
+        "illuminate/database": "4.*"						
+	},
+
+    "autoload": {   		
+    	"files": [ "server/conection.php" ],
+    	"classmap": [ "server/Models" ]    
+	}
+}
