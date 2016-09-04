@@ -2,7 +2,7 @@
 
 use Iluminate\Database\Eloquent\Model as Model;
 
-class Account extends Model{
+class Contribution extends Model{
 	protectec $table = 'account';
 	public $timestamps =  false;
 

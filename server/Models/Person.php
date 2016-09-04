@@ -1,9 +1,9 @@
 <?php namespace App;
 
-use Iluminate\Database\Eloquent\Model as Model;
+use Illuminate\Database\Eloquent\Model as Model;
 
 class Person extends Model{
-	protectec $table = 'person';
+	protected $table = 'person';
 	public $timestamps =  false;
 
 	public function wedding()

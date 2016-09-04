@@ -28,10 +28,10 @@ $app->get('/', function () use ($app) {
 
 // API group
 $app->group('/api', function () use ($app) {
-
-	$app->get('/message',function() use($app){
-		echo 'hola bola';
-	});
+	$app->post('/user/profile/savePerson','App\Controllers\PersonController:savePerson');
+	$app->post('/user/profile/logIn', 'App\Controllers\PersonController:logIn');
+	$app->put('/user/profile/updatePerson/:id', 'App\Controllers\PersonController:updatePerson');
+	$app->put('/user/profile/updateUser/:id', 'App\Controllers\PersonController:updateUser');	
 });
 
 $app->notFound(function () use ($app) {
